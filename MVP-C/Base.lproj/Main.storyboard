@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-xt-ghi">
+                                <rect key="frame" x="73" y="409.66666666666669" width="244" height="35"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                <state key="normal" title="Pulseeeeeee AQUI POR FAVOR">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.97254901959999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LD0-md-Wmq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gqb-xt-ghi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="RS3-r9-5R7"/>
+                            <constraint firstItem="Gqb-xt-ghi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TSK-Ty-yrT"/>
+                            <constraint firstItem="Gqb-xt-ghi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="WOH-1Q-aNY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gqb-xt-ghi" secondAttribute="trailing" constant="25" id="fDi-4G-MYt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pulseButton" destination="Gqb-xt-ghi" id="J7g-eh-EMJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="107"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="pkC-Ek-6Cc">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="PWK-Rl-QX9" customClass="DetailViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xsa-xS-JZe">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hola hola hola hola hola hola " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4S-ue-LNT">
+                                <rect key="frame" x="86.000000000000014" y="412" width="218.33333333333337" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YHb-Xx-Z2f">
+                                <rect key="frame" x="24" y="462.33333333333326" width="342" height="273.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dns-82-Eo9">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="129.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDJ-NV-Qer">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="33"/>
+                                                <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="Switch">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="switchTapped:" destination="PWK-Rl-QX9" eventType="touchUpInside" id="Typ-AA-QDF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf0-Bz-OyJ">
+                                                <rect key="frame" x="0.0" y="48" width="342" height="33"/>
+                                                <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="Vistas">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="424-Dc-9Ob">
+                                                <rect key="frame" x="0.0" y="96.000000000000057" width="342" height="33.333333333333343"/>
+                                                <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="Slider">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cbq-M1-6lL">
+                                        <rect key="frame" x="0.0" y="144.33333333333331" width="342" height="129.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-eE-ZHF">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="33"/>
+                                                <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="Switch">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2B-Gu-RKd">
+                                                <rect key="frame" x="0.0" y="48" width="342" height="33.333333333333343"/>
+                                                <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="Vistas">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehi-2Z-jrH">
+                                                <rect key="frame" x="0.0" y="96.333333333333371" width="342" height="33"/>
+                                                <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                <state key="normal" title="Slider">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ff9-A0-gbS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ff9-A0-gbS" firstAttribute="trailing" secondItem="YHb-Xx-Z2f" secondAttribute="trailing" constant="24" id="3Zl-xL-2jN"/>
+                            <constraint firstItem="T4S-ue-LNT" firstAttribute="centerY" secondItem="Xsa-xS-JZe" secondAttribute="centerY" id="6Sm-vx-m5b"/>
+                            <constraint firstItem="YHb-Xx-Z2f" firstAttribute="leading" secondItem="ff9-A0-gbS" secondAttribute="leading" constant="24" id="KhI-ZL-UIF"/>
+                            <constraint firstItem="ff9-A0-gbS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T4S-ue-LNT" secondAttribute="trailing" constant="24" id="PI1-4S-fEu"/>
+                            <constraint firstItem="cbq-M1-6lL" firstAttribute="height" secondItem="Xsa-xS-JZe" secondAttribute="height" multiplier="0.153348" id="Q7t-Xp-BWl"/>
+                            <constraint firstItem="T4S-ue-LNT" firstAttribute="centerX" secondItem="ff9-A0-gbS" secondAttribute="centerX" id="VuG-sR-Dw3"/>
+                            <constraint firstItem="YHb-Xx-Z2f" firstAttribute="top" secondItem="T4S-ue-LNT" secondAttribute="bottom" constant="30" id="fw9-Lf-jvt"/>
+                            <constraint firstItem="dns-82-Eo9" firstAttribute="height" secondItem="Xsa-xS-JZe" secondAttribute="height" multiplier="0.153348" id="oGm-IM-850"/>
+                            <constraint firstItem="T4S-ue-LNT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ff9-A0-gbS" secondAttribute="leading" constant="24" id="tNe-ct-rVD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="buttons" destination="Rcy-eE-ZHF" collectionClass="NSMutableArray" id="5Ro-ee-K2O"/>
+                        <outletCollection property="buttons" destination="y2B-Gu-RKd" collectionClass="NSMutableArray" id="Vbe-kU-JOT"/>
+                        <outletCollection property="buttons" destination="Ehi-2Z-jrH" collectionClass="NSMutableArray" id="Gno-aP-nCb"/>
+                        <outletCollection property="buttons" destination="424-Dc-9Ob" collectionClass="NSMutableArray" id="LMH-PL-jiC"/>
+                        <outletCollection property="buttons" destination="Gf0-Bz-OyJ" collectionClass="NSMutableArray" id="Xpy-9U-Dhz"/>
+                        <outletCollection property="buttons" destination="VDJ-NV-Qer" collectionClass="NSMutableArray" id="9tU-0M-0Wk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K15-f0-duY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="107"/>
+        </scene>
+        <!--Detail Switch View Controller-->
+        <scene sceneID="i5J-f7-tkF">
+            <objects>
+                <viewController storyboardIdentifier="DetailSwitchViewController" id="Klx-ba-sze" customClass="DetailSwitchViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sJ3-3o-p9C">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIv-F3-Npj">
+                                <rect key="frame" x="169" y="412" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ffZ-HH-wIv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YIv-F3-Npj" firstAttribute="centerX" secondItem="ffZ-HH-wIv" secondAttribute="centerX" id="5Fp-Ui-Ivm"/>
+                            <constraint firstItem="YIv-F3-Npj" firstAttribute="centerY" secondItem="ffZ-HH-wIv" secondAttribute="centerY" constant="-4.5" id="EK7-iI-eip"/>
+                            <constraint firstItem="ffZ-HH-wIv" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YIv-F3-Npj" secondAttribute="trailing" constant="24" id="TcU-Sm-UnQ"/>
+                            <constraint firstItem="YIv-F3-Npj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ffZ-HH-wIv" secondAttribute="leading" constant="24" id="kf8-wb-NmJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEF-28-8Sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
