@@ -8,9 +8,15 @@
 import Foundation
 import UIKit
 
+protocol HomeCoordinatorExternal: AnyObject {
+    func onBuy()
+    func onAdd()
+}
+
 protocol PresenterHomeViewProtocol: AnyObject {
     func viewDidLoad()
     func buttonPressed()
+    func onPresent()
     
 }
 
@@ -22,12 +28,16 @@ class PresenterHomeView: PresenterHomeViewProtocol{
         self.view = vista
     }
     
-       func viewDidLoad() {
-           view?.updateUI()
-       }
-       
-       func buttonPressed() {
-           coordinator?.orangeButton()
-       }
+    func viewDidLoad() {
+       view?.updateUI()
+    }
+   
+    func buttonPressed() {
+       coordinator?.onBuy()
+    }
+    
+    func onPresent() {
+        coordinator?.onAdd()
+    }
 }
 

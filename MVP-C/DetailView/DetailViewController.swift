@@ -26,7 +26,6 @@ class DetailViewController: UIViewController, Storyboarded {
         presenter?.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
 
 }
 

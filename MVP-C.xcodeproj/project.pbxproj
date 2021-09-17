@@ -21,6 +21,7 @@
 		BB93055F26F336FA00B7674D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93055E26F336FA00B7674D /* DetailViewController.swift */; };
 		BB93056426F3AB5600B7674D /* DetailSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93056326F3AB5600B7674D /* DetailSwitchViewController.swift */; };
 		BB93056626F3AC5200B7674D /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93056526F3AC5200B7674D /* DetailViewPresenter.swift */; };
+		D8677E1E26F4933E00F65A1A /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8677E1D26F4933E00F65A1A /* DetailCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BB93055E26F336FA00B7674D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BB93056326F3AB5600B7674D /* DetailSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSwitchViewController.swift; sourceTree = "<group>"; };
 		BB93056526F3AC5200B7674D /* DetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenter.swift; sourceTree = "<group>"; };
+		D8677E1D26F4933E00F65A1A /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				BB93055726F3280700B7674D /* MainCoordinator.swift */,
 				BB93055926F328DB00B7674D /* Storyboarded.swift */,
+				D8677E1D26F4933E00F65A1A /* DetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				BB93052926F327AA00B7674D /* ViewController.swift in Sources */,
 				BB93055C26F3325800B7674D /* PresenterHomeView.swift in Sources */,
 				BB93055826F3280700B7674D /* MainCoordinator.swift in Sources */,
+				D8677E1E26F4933E00F65A1A /* DetailCoordinator.swift in Sources */,
 				BB93056426F3AB5600B7674D /* DetailSwitchViewController.swift in Sources */,
 				BB93056626F3AC5200B7674D /* DetailViewPresenter.swift in Sources */,
 				BB93055A26F328DB00B7674D /* Storyboarded.swift in Sources */,

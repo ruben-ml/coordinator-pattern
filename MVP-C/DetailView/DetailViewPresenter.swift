@@ -7,13 +7,18 @@
 
 import Foundation
 
+protocol DetailExternal: AnyObject {
+    func onDetailProduct()
+}
+
 protocol detailPresenterProtocol: AnyObject {
     func viewDidLoad()
     func buttonPress()
 }
+
 class DetailViewPresenter: detailPresenterProtocol {
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: DetailExternal?
     weak var view: detailViewProtocol?
     
     init(view: detailViewProtocol) {
@@ -23,8 +28,9 @@ class DetailViewPresenter: detailPresenterProtocol {
     func viewDidLoad() {
         view?.updateUI()
     }
+    
     func buttonPress() {
-        coordinator?.greenButton()
+        coordinator?.onDetailProduct()
     }
 }
 

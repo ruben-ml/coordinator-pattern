@@ -18,6 +18,10 @@ class ViewController: UIViewController, Storyboarded {
         presenter?.buttonPressed()
     }
     
+    @IBAction func onPresent(_ sender: Any) {
+        presenter?.onPresent()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()

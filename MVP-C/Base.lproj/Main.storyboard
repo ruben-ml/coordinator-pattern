@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,14 +29,28 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LD0-md-Wmq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svF-zn-2hK">
+                                <rect key="frame" x="73" y="471" width="244" height="35"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                <state key="normal" title="Pulseeeeeee AQUI POR FAVOR">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.97254901959999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPresent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vl6-ud-JMB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gqb-xt-ghi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="RS3-r9-5R7"/>
                             <constraint firstItem="Gqb-xt-ghi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TSK-Ty-yrT"/>
+                            <constraint firstItem="svF-zn-2hK" firstAttribute="top" secondItem="Gqb-xt-ghi" secondAttribute="bottom" constant="26.333333333333314" id="UHk-Dv-Sbw"/>
                             <constraint firstItem="Gqb-xt-ghi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="WOH-1Q-aNY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gqb-xt-ghi" secondAttribute="trailing" constant="25" id="fDi-4G-MYt"/>
+                            <constraint firstItem="svF-zn-2hK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="j1n-kI-hym"/>
                         </constraints>
                     </view>
                     <connections>
