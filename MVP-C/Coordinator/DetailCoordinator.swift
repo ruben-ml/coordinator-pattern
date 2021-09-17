@@ -36,9 +36,6 @@ extension DetailCoordinator: DetailExternal {
 extension DetailCoordinator {
     func navigateToDetailSwitch() {
         let vc = DetailSwitchViewController.instantiate()
-//        let presenter = DetailViewPresenter(view: vc)
-//        presenter.coordinator = self
-//        vc.presenter = presenter
         navigationController.pushViewController(vc, animated: true)
     }
 

@@ -12,8 +12,9 @@ protocol HomeViewProtocol: AnyObject {
 class ViewController: UIViewController, Storyboarded {
 
     var presenter: PresenterHomeViewProtocol?
+
+    @IBOutlet var buttons: [UIButton]!
     
-    @IBOutlet weak var pulseButton: UIButton!
     @IBAction func buttonTapped(_ sender: Any) {
         presenter?.buttonPressed()
     }
@@ -30,8 +31,11 @@ class ViewController: UIViewController, Storyboarded {
 
 extension ViewController: HomeViewProtocol {
     func updateUI() {
-        pulseButton.backgroundColor = UIColor(red: 252 / 255.0, green: 62 / 255.0, blue: 38 / 255.0, alpha: 1.0)
-        pulseButton.layer.cornerRadius = pulseButton.frame.height / 4
+        
+        for array in buttons {
+            array.backgroundColor = UIColor(red: 252 / 255.0, green: 62 / 255.0, blue: 38 / 255.0, alpha: 1.0)
+            array.layer.cornerRadius = array.frame.height / 4
+        }
     }
     
     

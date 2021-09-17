@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,14 +13,14 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-xt-ghi">
-                                <rect key="frame" x="73" y="409.66666666666669" width="244" height="35"/>
+                                <rect key="frame" x="121.66666666666669" y="450.66666666666669" width="185" height="35"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
-                                <state key="normal" title="Pulseeeeeee AQUI POR FAVOR">
+                                <state key="normal" title="Pulse para ver Turquía">
                                     <color key="titleColor" red="0.99215686270000003" green="0.97254901959999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
@@ -30,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svF-zn-2hK">
-                                <rect key="frame" x="73" y="471" width="244" height="35"/>
+                                <rect key="frame" x="92" y="512" width="244" height="35"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
                                 <state key="normal" title="Pulseeeeeee AQUI POR FAVOR">
@@ -54,7 +53,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pulseButton" destination="Gqb-xt-ghi" id="J7g-eh-EMJ"/>
+                        <outletCollection property="buttons" destination="svF-zn-2hK" collectionClass="NSMutableArray" id="b9i-zm-eQl"/>
+                        <outletCollection property="buttons" destination="Gqb-xt-ghi" collectionClass="NSMutableArray" id="Zis-h5-Wa3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,26 +66,26 @@
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="PWK-Rl-QX9" customClass="DetailViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xsa-xS-JZe">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hola hola hola hola hola hola " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4S-ue-LNT">
-                                <rect key="frame" x="86.000000000000014" y="412" width="218.33333333333337" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guía de Estambul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4S-ue-LNT">
+                                <rect key="frame" x="147" y="452" width="134.33333333333337" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YHb-Xx-Z2f">
-                                <rect key="frame" x="24" y="462.33333333333326" width="342" height="273.66666666666674"/>
+                                <rect key="frame" x="24" y="504" width="380" height="299"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dns-82-Eo9">
-                                        <rect key="frame" x="0.0" y="0.0" width="342" height="129.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="142"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDJ-NV-Qer">
-                                                <rect key="frame" x="0.0" y="0.0" width="342" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="380" height="37.333333333333336"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                                <state key="normal" title="Switch">
+                                                <state key="normal" title="Información">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -93,47 +93,47 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf0-Bz-OyJ">
-                                                <rect key="frame" x="0.0" y="48" width="342" height="33"/>
+                                                <rect key="frame" x="0.0" y="52.333333333333371" width="380" height="37.333333333333343"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                                <state key="normal" title="Vistas">
+                                                <state key="normal" title="Tours">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="424-Dc-9Ob">
-                                                <rect key="frame" x="0.0" y="96.000000000000057" width="342" height="33.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="104.66666666666663" width="380" height="37.333333333333343"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                                <state key="normal" title="Slider">
+                                                <state key="normal" title="Gastronomía">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cbq-M1-6lL">
-                                        <rect key="frame" x="0.0" y="144.33333333333331" width="342" height="129.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="157" width="380" height="142"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-eE-ZHF">
-                                                <rect key="frame" x="0.0" y="0.0" width="342" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="380" height="37.333333333333336"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                                <state key="normal" title="Switch">
+                                                <state key="normal" title="Transporte">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2B-Gu-RKd">
-                                                <rect key="frame" x="0.0" y="48" width="342" height="33.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="52.333333333333371" width="380" height="37.333333333333343"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                                <state key="normal" title="Vistas">
+                                                <state key="normal" title="Hoteles">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehi-2Z-jrH">
-                                                <rect key="frame" x="0.0" y="96.333333333333371" width="342" height="33"/>
+                                                <rect key="frame" x="0.0" y="104.66666666666663" width="380" height="37.333333333333343"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                                <state key="normal" title="Slider">
+                                                <state key="normal" title="Tiendas">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -141,19 +141,26 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-4s-uJL">
+                                <rect key="frame" x="20" y="63" width="388" height="373"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ff9-A0-gbS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ff9-A0-gbS" firstAttribute="trailing" secondItem="YHb-Xx-Z2f" secondAttribute="trailing" constant="24" id="3Zl-xL-2jN"/>
                             <constraint firstItem="T4S-ue-LNT" firstAttribute="centerY" secondItem="Xsa-xS-JZe" secondAttribute="centerY" id="6Sm-vx-m5b"/>
+                            <constraint firstItem="ff9-A0-gbS" firstAttribute="trailing" secondItem="6O5-4s-uJL" secondAttribute="trailing" constant="20" id="FhF-zM-deN"/>
                             <constraint firstItem="YHb-Xx-Z2f" firstAttribute="leading" secondItem="ff9-A0-gbS" secondAttribute="leading" constant="24" id="KhI-ZL-UIF"/>
                             <constraint firstItem="ff9-A0-gbS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T4S-ue-LNT" secondAttribute="trailing" constant="24" id="PI1-4S-fEu"/>
                             <constraint firstItem="cbq-M1-6lL" firstAttribute="height" secondItem="Xsa-xS-JZe" secondAttribute="height" multiplier="0.153348" id="Q7t-Xp-BWl"/>
                             <constraint firstItem="T4S-ue-LNT" firstAttribute="centerX" secondItem="ff9-A0-gbS" secondAttribute="centerX" id="VuG-sR-Dw3"/>
+                            <constraint firstItem="6O5-4s-uJL" firstAttribute="top" secondItem="ff9-A0-gbS" secondAttribute="top" constant="19" id="aYv-hT-Kyn"/>
+                            <constraint firstItem="T4S-ue-LNT" firstAttribute="top" secondItem="6O5-4s-uJL" secondAttribute="bottom" constant="16" id="fw0-Ku-3FS"/>
                             <constraint firstItem="YHb-Xx-Z2f" firstAttribute="top" secondItem="T4S-ue-LNT" secondAttribute="bottom" constant="30" id="fw9-Lf-jvt"/>
                             <constraint firstItem="dns-82-Eo9" firstAttribute="height" secondItem="Xsa-xS-JZe" secondAttribute="height" multiplier="0.153348" id="oGm-IM-850"/>
                             <constraint firstItem="T4S-ue-LNT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ff9-A0-gbS" secondAttribute="leading" constant="24" id="tNe-ct-rVD"/>
+                            <constraint firstItem="6O5-4s-uJL" firstAttribute="leading" secondItem="ff9-A0-gbS" secondAttribute="leading" constant="20" id="yrA-8c-oyl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -167,18 +174,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K15-f0-duY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="107"/>
+            <point key="canvasLocation" x="817.28971962616822" y="106.91144708423327"/>
         </scene>
         <!--Detail Switch View Controller-->
         <scene sceneID="i5J-f7-tkF">
             <objects>
                 <viewController storyboardIdentifier="DetailSwitchViewController" id="Klx-ba-sze" customClass="DetailSwitchViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sJ3-3o-p9C">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIv-F3-Npj">
-                                <rect key="frame" x="169" y="412" width="52" height="21"/>
+                                <rect key="frame" x="188" y="453" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -200,6 +207,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="612" height="404"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
