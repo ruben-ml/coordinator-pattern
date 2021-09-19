@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB29D78426F794C900FE4210 /* ToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29D78326F794C900FE4210 /* ToursViewController.swift */; };
+		BB29D78626F7953E00FE4210 /* ToursDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB29D78526F7953E00FE4210 /* ToursDetailView.storyboard */; };
 		BB93052526F327AA00B7674D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052426F327AA00B7674D /* AppDelegate.swift */; };
 		BB93052726F327AA00B7674D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052626F327AA00B7674D /* SceneDelegate.swift */; };
 		BB93052926F327AA00B7674D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052826F327AA00B7674D /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB29D78326F794C900FE4210 /* ToursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewController.swift; sourceTree = "<group>"; };
+		BB29D78526F7953E00FE4210 /* ToursDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToursDetailView.storyboard; sourceTree = "<group>"; };
 		BB93052126F327AA00B7674D /* MVP-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB93052426F327AA00B7674D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB93052626F327AA00B7674D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB29D78226F7949400FE4210 /* ToursDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				BB29D78326F794C900FE4210 /* ToursViewController.swift */,
+				BB29D78526F7953E00FE4210 /* ToursDetailView.storyboard */,
+			);
+			path = ToursDetailView;
+			sourceTree = "<group>";
+		};
 		BB93051826F327AA00B7674D = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +126,7 @@
 		BB93052326F327AA00B7674D /* MVP-C */ = {
 			isa = PBXGroup;
 			children = (
+				BB29D78226F7949400FE4210 /* ToursDetailView */,
 				BB93056226F3AB1C00B7674D /* DetailViewSwitch */,
 				BB93055D26F336E400B7674D /* DetailView */,
 				BB93055626F327F200B7674D /* HomeView */,
@@ -284,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB29D78626F7953E00FE4210 /* ToursDetailView.storyboard in Resources */,
 				BB93053126F327AC00B7674D /* LaunchScreen.storyboard in Resources */,
 				BB93052E26F327AC00B7674D /* Assets.xcassets in Resources */,
 				BB93052C26F327AA00B7674D /* Main.storyboard in Resources */,
@@ -313,6 +328,7 @@
 			files = (
 				BB93052926F327AA00B7674D /* ViewController.swift in Sources */,
 				BB93055C26F3325800B7674D /* PresenterHomeView.swift in Sources */,
+				BB29D78426F794C900FE4210 /* ToursViewController.swift in Sources */,
 				BB93055826F3280700B7674D /* MainCoordinator.swift in Sources */,
 				D8677E1E26F4933E00F65A1A /* DetailCoordinator.swift in Sources */,
 				BB93056426F3AB5600B7674D /* DetailSwitchViewController.swift in Sources */,

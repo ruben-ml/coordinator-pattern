@@ -9,11 +9,13 @@ import Foundation
 
 protocol DetailExternal: AnyObject {
     func onDetailProduct()
+    func onDetailTours()
 }
 
 protocol detailPresenterProtocol: AnyObject {
     func viewDidLoad()
     func buttonPress()
+    func buttonTours()
 }
 
 class DetailViewPresenter: detailPresenterProtocol {
@@ -31,6 +33,10 @@ class DetailViewPresenter: detailPresenterProtocol {
     
     func buttonPress() {
         coordinator?.onDetailProduct()
+    }
+    
+    func buttonTours() {
+        coordinator?.onDetailTours()
     }
 }
 

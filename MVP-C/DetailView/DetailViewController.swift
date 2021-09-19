@@ -21,6 +21,9 @@ class DetailViewController: UIViewController, Storyboarded {
         presenter?.buttonPress()
     }
     
+    @IBAction func toursTapped(_ sender: Any) {
+        presenter?.buttonTours()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()

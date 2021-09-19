@@ -27,6 +27,10 @@ class DetailCoordinator: Coordinator {
 }
 
 extension DetailCoordinator: DetailExternal {
+    func onDetailTours() {
+        navigateToDetailTours()
+    }
+    
     
     func onDetailProduct() {
         navigateToDetailSwitch()
@@ -36,6 +40,10 @@ extension DetailCoordinator: DetailExternal {
 extension DetailCoordinator {
     func navigateToDetailSwitch() {
         let vc = DetailSwitchViewController.instantiate()
+        navigationController.pushViewController(vc, animated: true)
+    }
+    func navigateToDetailTours() {
+        let vc = ToursViewController.instantiate()
         navigationController.pushViewController(vc, animated: true)
     }
 

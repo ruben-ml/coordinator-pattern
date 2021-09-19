@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-xt-ghi">
-                                <rect key="frame" x="121.66666666666669" y="450.66666666666669" width="185" height="35"/>
+                                <rect key="frame" x="67.5" y="222.5" width="185" height="35"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
                                 <state key="normal" title="Pulse para ver Turquía">
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svF-zn-2hK">
-                                <rect key="frame" x="92" y="512" width="244" height="35"/>
+                                <rect key="frame" x="38" y="284" width="244" height="35"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
                                 <state key="normal" title="Pulseeeeeee AQUI POR FAVOR">
@@ -66,23 +66,23 @@
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="PWK-Rl-QX9" customClass="DetailViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xsa-xS-JZe">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guía de Estambul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4S-ue-LNT">
-                                <rect key="frame" x="147" y="452" width="134.33333333333337" height="22"/>
+                                <rect key="frame" x="93" y="229" width="134.5" height="22"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YHb-Xx-Z2f">
-                                <rect key="frame" x="24" y="484" width="380" height="358"/>
+                                <rect key="frame" x="24" y="261" width="272" height="221"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="dns-82-Eo9">
-                                        <rect key="frame" x="0.0" y="0.0" width="380" height="142"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="73.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDJ-NV-Qer">
-                                                <rect key="frame" x="0.0" y="0.0" width="380" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="17"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <state key="normal" title="Información">
@@ -93,15 +93,18 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf0-Bz-OyJ">
-                                                <rect key="frame" x="0.0" y="51" width="380" height="40"/>
+                                                <rect key="frame" x="0.0" y="28" width="272" height="17.5"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <state key="normal" title="Tours">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="toursTapped:" destination="PWK-Rl-QX9" eventType="touchUpInside" id="MqS-hA-3jj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="424-Dc-9Ob">
-                                                <rect key="frame" x="0.0" y="102" width="380" height="40"/>
+                                                <rect key="frame" x="0.0" y="56.5" width="272" height="17"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <state key="normal" title="Gastronomía">
@@ -111,10 +114,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="cbq-M1-6lL">
-                                        <rect key="frame" x="0.0" y="152" width="380" height="142"/>
+                                        <rect key="frame" x="0.0" y="83.5" width="272" height="73.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-eE-ZHF">
-                                                <rect key="frame" x="0.0" y="0.0" width="380" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="17.5"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <state key="normal" title="Transporte">
@@ -122,7 +125,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2B-Gu-RKd">
-                                                <rect key="frame" x="0.0" y="51" width="380" height="40"/>
+                                                <rect key="frame" x="0.0" y="28.5" width="272" height="17"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <state key="normal" title="Hoteles">
@@ -130,7 +133,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehi-2Z-jrH">
-                                                <rect key="frame" x="0.0" y="102" width="380" height="40"/>
+                                                <rect key="frame" x="0.0" y="56.5" width="272" height="17"/>
                                                 <color key="backgroundColor" red="1" green="0.76232387349999997" blue="0.74736287329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <state key="normal" title="Tiendas">
@@ -140,16 +143,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="lastBaseline" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="JJC-V4-xhc">
-                                        <rect key="frame" x="0.0" y="304" width="380" height="22"/>
+                                        <rect key="frame" x="0.0" y="167" width="272" height="22"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="info@email.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtL-c0-Imt">
-                                                <rect key="frame" x="0.0" y="0.0" width="131.33333333333334" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+34675895098" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdO-Eq-Cm6">
-                                                <rect key="frame" x="245.66666666666669" y="0.0" width="134.33333333333331" height="22"/>
+                                                <rect key="frame" x="137.5" y="0.0" width="134.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -157,16 +160,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="lastBaseline" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="E4Z-hN-4Ha">
-                                        <rect key="frame" x="0.0" y="336" width="380" height="22"/>
+                                        <rect key="frame" x="0.0" y="199" width="272" height="22"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="@insta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-CS-Ls6">
-                                                <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="60.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gui-rb-XBO">
-                                                <rect key="frame" x="289.66666666666669" y="0.0" width="90.333333333333314" height="22"/>
+                                                <rect key="frame" x="181.5" y="0.0" width="90.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -176,7 +179,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-4s-uJL">
-                                <rect key="frame" x="20" y="63" width="388" height="373"/>
+                                <rect key="frame" x="20" y="19" width="280" height="194"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ff9-A0-gbS"/>
@@ -210,16 +213,24 @@
             </objects>
             <point key="canvasLocation" x="817.28971962616822" y="106.91144708423327"/>
         </scene>
+        <!--ToursViewController-->
+        <scene sceneID="nFl-3b-gX6">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ToursViewController" storyboardName="ToursDetailView" referencedIdentifier="ToursViewController" id="pCn-T9-4La" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ko2-Kb-U8d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1407" y="90"/>
+        </scene>
         <!--Detail Switch View Controller-->
         <scene sceneID="i5J-f7-tkF">
             <objects>
                 <viewController storyboardIdentifier="DetailSwitchViewController" id="Klx-ba-sze" customClass="DetailSwitchViewController" customModule="MVP_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sJ3-3o-p9C">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIv-F3-Npj">
-                                <rect key="frame" x="188" y="453" width="52" height="21"/>
+                                <rect key="frame" x="134" y="225" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -237,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEF-28-8Sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1550" y="107"/>
+            <point key="canvasLocation" x="1524" y="-299"/>
         </scene>
     </scenes>
     <resources>
