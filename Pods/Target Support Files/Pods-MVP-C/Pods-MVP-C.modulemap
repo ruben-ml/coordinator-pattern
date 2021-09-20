@@ -1,0 +1,6 @@
+framework module Pods_MVP_C {
+  umbrella header "Pods-MVP-C-umbrella.h"
+
+  export *
+  module * { export * }
+}
