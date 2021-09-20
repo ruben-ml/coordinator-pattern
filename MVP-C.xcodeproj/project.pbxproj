@@ -22,8 +22,9 @@
 		BB6FB5E826F8B36B00E0E4AF /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5E726F8B36B00E0E4AF /* ShopsViewController.swift */; };
 		BB6FB5EA26F8B5D600E0E4AF /* InformationDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5E926F8B5D600E0E4AF /* InformationDetailView.storyboard */; };
 		BB6FB5EC26F8B77900E0E4AF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5EB26F8B77900E0E4AF /* InformationViewController.swift */; };
-		BB6FB5EE26F8CE6400E0E4AF /* InformationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5ED26F8CE6400E0E4AF /* InformationCollectionViewCell.swift */; };
 		BB6FB5F426F8DE1700E0E4AF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5F326F8DE1700E0E4AF /* R.generated.swift */; };
+		BB6FB5F626F8EDE900E0E4AF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5F526F8EDE900E0E4AF /* CollectionViewCell.swift */; };
+		BB6FB5F826F8EF5300E0E4AF /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5F726F8EF5300E0E4AF /* Information.swift */; };
 		BB93052526F327AA00B7674D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052426F327AA00B7674D /* AppDelegate.swift */; };
 		BB93052726F327AA00B7674D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052626F327AA00B7674D /* SceneDelegate.swift */; };
 		BB93052926F327AA00B7674D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052826F327AA00B7674D /* ViewController.swift */; };
@@ -77,8 +78,9 @@
 		BB6FB5E726F8B36B00E0E4AF /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
 		BB6FB5E926F8B5D600E0E4AF /* InformationDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InformationDetailView.storyboard; sourceTree = "<group>"; };
 		BB6FB5EB26F8B77900E0E4AF /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
-		BB6FB5ED26F8CE6400E0E4AF /* InformationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB6FB5F326F8DE1700E0E4AF /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		BB6FB5F526F8EDE900E0E4AF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BB6FB5F726F8EF5300E0E4AF /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		BB93052126F327AA00B7674D /* MVP-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB93052426F327AA00B7674D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB93052626F327AA00B7674D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -303,7 +305,8 @@
 			children = (
 				BB6FB5E926F8B5D600E0E4AF /* InformationDetailView.storyboard */,
 				BB6FB5EB26F8B77900E0E4AF /* InformationViewController.swift */,
-				BB6FB5ED26F8CE6400E0E4AF /* InformationCollectionViewCell.swift */,
+				BB6FB5F526F8EDE900E0E4AF /* CollectionViewCell.swift */,
+				BB6FB5F726F8EF5300E0E4AF /* Information.swift */,
 			);
 			path = InformationDetailView;
 			sourceTree = "<group>";
@@ -573,10 +576,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6FB5F826F8EF5300E0E4AF /* Information.swift in Sources */,
 				BB93052926F327AA00B7674D /* ViewController.swift in Sources */,
 				BB93055C26F3325800B7674D /* PresenterHomeView.swift in Sources */,
+				BB6FB5F626F8EDE900E0E4AF /* CollectionViewCell.swift in Sources */,
 				BB29D78426F794C900FE4210 /* ToursViewController.swift in Sources */,
-				BB6FB5EE26F8CE6400E0E4AF /* InformationCollectionViewCell.swift in Sources */,
 				BB6FB5E626F8B36000E0E4AF /* HotelsViewController.swift in Sources */,
 				BB93055826F3280700B7674D /* MainCoordinator.swift in Sources */,
 				D8677E1E26F4933E00F65A1A /* DetailCoordinator.swift in Sources */,
