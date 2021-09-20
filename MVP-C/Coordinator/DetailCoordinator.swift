@@ -31,20 +31,55 @@ extension DetailCoordinator: DetailExternal {
         navigateToDetailTours()
     }
     
-    
     func onDetailProduct() {
-        navigateToDetailSwitch()
+        navigateToDetailInformation()
+    }
+    
+    func onDetailGastronomy() {
+        navigateToDetailGastronomy()
+    }
+    
+    func onDetailTransport() {
+        navigateToDetailTransport()
+    }
+    
+    func onDetailHotels() {
+        navigateToDetailHotels()
+    }
+    
+    func onDetailShops() {
+        navigateToDetailShops()
     }
 }
 
 extension DetailCoordinator {
-    func navigateToDetailSwitch() {
-        let vc = DetailSwitchViewController.instantiate()
+    func navigateToDetailInformation() {
+        let vc = InformationViewController.instantiate()
         navigationController.pushViewController(vc, animated: true)
     }
+    
     func navigateToDetailTours() {
         let vc = ToursViewController.instantiate()
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    func navigateToDetailGastronomy() {
+        let vc = GastronomyViewController.instantiate()
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func navigateToDetailTransport() {
+        let vc = TransportViewController.instantiate()
+        navigationController.pushViewController(vc, animated: true)
+    }
 
+    func navigateToDetailHotels() {
+        let vc = HotelsViewController.instantiate()
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func navigateToDetailShops() {
+        let vc = ShopsViewController.instantiate()
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

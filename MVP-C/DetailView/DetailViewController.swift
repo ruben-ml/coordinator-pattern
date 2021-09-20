@@ -24,6 +24,21 @@ class DetailViewController: UIViewController, Storyboarded {
     @IBAction func toursTapped(_ sender: Any) {
         presenter?.buttonTours()
     }
+    
+    @IBAction func gastronomyTapped(_ sender: Any) {
+        presenter?.buttonGastronomy()
+    }
+    
+    @IBAction func transportTapped(_ sender: Any) {
+        presenter?.buttonTransport()
+    }
+    @IBAction func hotelsTapped(_ sender: Any) {
+        presenter?.buttonHotels()
+    }
+    @IBAction func shopsTapped(_ sender: Any) {
+        presenter?.buttonShops()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()

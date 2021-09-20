@@ -1,13 +1,13 @@
 //
-//  DetailSwitchViewController.swift
+//  GastronomyViewController.swift
 //  MVP-C
 //
-//  Created by Rubén Muñoz López on 16/9/21.
+//  Created by Rubén Muñoz López on 20/9/21.
 //
 
 import UIKit
 
-class DetailSwitchViewController: UIViewController, Storyboarded {
+class GastronomyViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
