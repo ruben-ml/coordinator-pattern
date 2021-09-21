@@ -12,6 +12,8 @@
 		8B70AD3F252E3AF24B758953 /* Pods_MVP_C_MVP_CUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B256E059E82F35B68DD15D0 /* Pods_MVP_C_MVP_CUITests.framework */; };
 		BB29D78426F794C900FE4210 /* ToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29D78326F794C900FE4210 /* ToursViewController.swift */; };
 		BB29D78626F7953E00FE4210 /* ToursDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB29D78526F7953E00FE4210 /* ToursDetailView.storyboard */; };
+		BB4FF7F326F9EBAD006D2229 /* TransportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FF7F226F9EBAD006D2229 /* TransportCollectionViewCell.swift */; };
+		BB4FF7F526F9F0A2006D2229 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FF7F426F9F0A2006D2229 /* Transport.swift */; };
 		BB6FB5DA26F8A47800E0E4AF /* GastronomyDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5D926F8A47800E0E4AF /* GastronomyDetailView.storyboard */; };
 		BB6FB5DC26F8A49500E0E4AF /* TransportDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5DB26F8A49500E0E4AF /* TransportDetailView.storyboard */; };
 		BB6FB5DE26F8A4A700E0E4AF /* HotelsDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5DD26F8A4A700E0E4AF /* HotelsDetailView.storyboard */; };
@@ -68,6 +70,8 @@
 		AF9E4556D73A1F2099ABB440 /* Pods-MVP-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP-C.release.xcconfig"; path = "Target Support Files/Pods-MVP-C/Pods-MVP-C.release.xcconfig"; sourceTree = "<group>"; };
 		BB29D78326F794C900FE4210 /* ToursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewController.swift; sourceTree = "<group>"; };
 		BB29D78526F7953E00FE4210 /* ToursDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToursDetailView.storyboard; sourceTree = "<group>"; };
+		BB4FF7F226F9EBAD006D2229 /* TransportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB4FF7F426F9F0A2006D2229 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		BB6FB5D926F8A47800E0E4AF /* GastronomyDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GastronomyDetailView.storyboard; sourceTree = "<group>"; };
 		BB6FB5DB26F8A49500E0E4AF /* TransportDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransportDetailView.storyboard; sourceTree = "<group>"; };
 		BB6FB5DD26F8A4A700E0E4AF /* HotelsDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HotelsDetailView.storyboard; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 			children = (
 				BB6FB5DB26F8A49500E0E4AF /* TransportDetailView.storyboard */,
 				BB6FB5E326F8B35500E0E4AF /* TransportViewController.swift */,
+				BB4FF7F226F9EBAD006D2229 /* TransportCollectionViewCell.swift */,
+				BB4FF7F426F9F0A2006D2229 /* Transport.swift */,
 			);
 			path = TransportDetailView;
 			sourceTree = "<group>";
@@ -583,6 +589,7 @@
 				BB29D78426F794C900FE4210 /* ToursViewController.swift in Sources */,
 				BB6FB5E626F8B36000E0E4AF /* HotelsViewController.swift in Sources */,
 				BB93055826F3280700B7674D /* MainCoordinator.swift in Sources */,
+				BB4FF7F526F9F0A2006D2229 /* Transport.swift in Sources */,
 				D8677E1E26F4933E00F65A1A /* DetailCoordinator.swift in Sources */,
 				BB93056626F3AC5200B7674D /* DetailViewPresenter.swift in Sources */,
 				BB6FB5F426F8DE1700E0E4AF /* R.generated.swift in Sources */,
@@ -590,6 +597,7 @@
 				BB93055A26F328DB00B7674D /* Storyboarded.swift in Sources */,
 				BB6FB5E426F8B35500E0E4AF /* TransportViewController.swift in Sources */,
 				BB93052526F327AA00B7674D /* AppDelegate.swift in Sources */,
+				BB4FF7F326F9EBAD006D2229 /* TransportCollectionViewCell.swift in Sources */,
 				BB93052726F327AA00B7674D /* SceneDelegate.swift in Sources */,
 				BB6FB5E826F8B36B00E0E4AF /* ShopsViewController.swift in Sources */,
 				BB93055F26F336FA00B7674D /* DetailViewController.swift in Sources */,

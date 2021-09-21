@@ -212,10 +212,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 8 images.
+  /// This `R.image` struct is generated, and contains static references to 13 images.
   struct image {
     /// Image `background`.
     static let background = Rswift.ImageResource(bundle: R.hostingBundle, name: "background")
+    /// Image `boat`.
+    static let boat = Rswift.ImageResource(bundle: R.hostingBundle, name: "boat")
+    /// Image `bus`.
+    static let bus = Rswift.ImageResource(bundle: R.hostingBundle, name: "bus")
+    /// Image `cableCar`.
+    static let cableCar = Rswift.ImageResource(bundle: R.hostingBundle, name: "cableCar")
     /// Image `calendar`.
     static let calendar = Rswift.ImageResource(bundle: R.hostingBundle, name: "calendar")
     /// Image `currency`.
@@ -226,8 +232,12 @@ struct R: Rswift.Validatable {
     static let idiom = Rswift.ImageResource(bundle: R.hostingBundle, name: "idiom")
     /// Image `price`.
     static let price = Rswift.ImageResource(bundle: R.hostingBundle, name: "price")
+    /// Image `taxi`.
+    static let taxi = Rswift.ImageResource(bundle: R.hostingBundle, name: "taxi")
     /// Image `toursEspecias`.
     static let toursEspecias = Rswift.ImageResource(bundle: R.hostingBundle, name: "toursEspecias")
+    /// Image `trolleyCar`.
+    static let trolleyCar = Rswift.ImageResource(bundle: R.hostingBundle, name: "trolleyCar")
     /// Image `weather`.
     static let weather = Rswift.ImageResource(bundle: R.hostingBundle, name: "weather")
 
@@ -235,6 +245,27 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "background", bundle: ..., traitCollection: ...)`
     static func background(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.background, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "boat", bundle: ..., traitCollection: ...)`
+    static func boat(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.boat, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bus", bundle: ..., traitCollection: ...)`
+    static func bus(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bus, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "cableCar", bundle: ..., traitCollection: ...)`
+    static func cableCar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.cableCar, compatibleWith: traitCollection)
     }
     #endif
 
@@ -274,9 +305,23 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "taxi", bundle: ..., traitCollection: ...)`
+    static func taxi(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.taxi, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "toursEspecias", bundle: ..., traitCollection: ...)`
     static func toursEspecias(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.toursEspecias, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "trolleyCar", bundle: ..., traitCollection: ...)`
+    static func trolleyCar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.trolleyCar, compatibleWith: traitCollection)
     }
     #endif
 
@@ -316,14 +361,6 @@ struct R: Rswift.Validatable {
 
       fileprivate init() {}
     }
-
-    fileprivate init() {}
-  }
-
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
-  struct reuseIdentifier {
-    /// Reuse identifier `cell`.
-    static let cell: Rswift.ReuseIdentifier<CollectionViewCell> = Rswift.ReuseIdentifier(identifier: "cell")
 
     fileprivate init() {}
   }
