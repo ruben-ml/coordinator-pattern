@@ -27,6 +27,7 @@ class InformationViewController: UIViewController, Storyboarded, UICollectionVie
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.setup(with: fields[indexPath.row])
+        cell.backgroundColor = R.color.cellColor()
         return cell
     }
     
