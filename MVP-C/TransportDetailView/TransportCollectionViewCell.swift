@@ -8,7 +8,12 @@
 import UIKit
 
 class TransportCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var lblImage: UILabel!
     
+    @IBOutlet weak var imageTransport: UIImageView!
+    @IBOutlet weak var lblTransport: UILabel!
+    
+    func setupTransport(with field: Transport) {
+        imageTransport.image = field.image
+        lblTransport.text = field.title
+    }
 }
