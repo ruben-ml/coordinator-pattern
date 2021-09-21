@@ -212,7 +212,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 13 images.
+  /// This `R.image` struct is generated, and contains static references to 16 images.
   struct image {
     /// Image `background`.
     static let background = Rswift.ImageResource(bundle: R.hostingBundle, name: "background")
@@ -228,6 +228,12 @@ struct R: Rswift.Validatable {
     static let currency = Rswift.ImageResource(bundle: R.hostingBundle, name: "currency")
     /// Image `documentation`.
     static let documentation = Rswift.ImageResource(bundle: R.hostingBundle, name: "documentation")
+    /// Image `hotel1`.
+    static let hotel1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "hotel1")
+    /// Image `hotel2`.
+    static let hotel2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "hotel2")
+    /// Image `hotel3`.
+    static let hotel3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "hotel3")
     /// Image `idiom`.
     static let idiom = Rswift.ImageResource(bundle: R.hostingBundle, name: "idiom")
     /// Image `price`.
@@ -287,6 +293,27 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "documentation", bundle: ..., traitCollection: ...)`
     static func documentation(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.documentation, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hotel1", bundle: ..., traitCollection: ...)`
+    static func hotel1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hotel1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hotel2", bundle: ..., traitCollection: ...)`
+    static func hotel2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hotel2, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hotel3", bundle: ..., traitCollection: ...)`
+    static func hotel3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hotel3, compatibleWith: traitCollection)
     }
     #endif
 

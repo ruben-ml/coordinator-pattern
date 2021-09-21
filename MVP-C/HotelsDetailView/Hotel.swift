@@ -20,4 +20,4 @@ struct Hotel {
     }
 }
 
-let arrayHotels: [Hotel] = [Hotel(title: "Crowne Plaza Antalya", image: UIImage(named: ""), ubicacion: "Gürsu, Akdeniz Blv. 304. Sokak, 07070 Konyaaltı/Antalya, Turquía"), Hotel(title: "Transatlantik Hotel", image: UIImage(named: ""), ubicacion: "Göynük, 07985 Kemer/Antalya, Turquía"), Hotel(title: "Aquasis de Luxe", image: UIImage(named: ""), ubicacion: "Çamlık, Üç Mevsim Cd. No:77, 09270 Didim/Aydın, Turquía")]
+let arrayHotels: [Hotel] = [Hotel(title: "Crowne Plaza Antalya", image: R.image.hotel1(), ubicacion: "Gürsu, Akdeniz Blv. 304. Sokak, 07070 Konyaaltı/Antalya, Turquía"), Hotel(title: "Transatlantik Hotel", image: R.image.hotel2(), ubicacion: "Göynük, 07985 Kemer/Antalya, Turquía"), Hotel(title: "Aquasis de Luxe", image: R.image.hotel3(), ubicacion: "Çamlık, Üç Mevsim Cd. No:77, 09270 Didim/Aydın, Turquía")]
