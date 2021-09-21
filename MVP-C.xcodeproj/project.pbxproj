@@ -15,6 +15,7 @@
 		BB4FF7F526F9F0A2006D2229 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FF7F426F9F0A2006D2229 /* Transport.swift */; };
 		BB62CC2826FA19450002706F /* TransportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CC2726FA19450002706F /* TransportCollectionViewCell.swift */; };
 		BB62CC2C26FA26D90002706F /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CC2B26FA26D90002706F /* Hotel.swift */; };
+		BB62CC2E26FA35990002706F /* HotelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CC2D26FA35990002706F /* HotelsTableViewCell.swift */; };
 		BB6FB5DA26F8A47800E0E4AF /* GastronomyDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5D926F8A47800E0E4AF /* GastronomyDetailView.storyboard */; };
 		BB6FB5DC26F8A49500E0E4AF /* TransportDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5DB26F8A49500E0E4AF /* TransportDetailView.storyboard */; };
 		BB6FB5DE26F8A4A700E0E4AF /* HotelsDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5DD26F8A4A700E0E4AF /* HotelsDetailView.storyboard */; };
@@ -74,6 +75,7 @@
 		BB4FF7F426F9F0A2006D2229 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		BB62CC2726FA19450002706F /* TransportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB62CC2B26FA26D90002706F /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		BB62CC2D26FA35990002706F /* HotelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsTableViewCell.swift; sourceTree = "<group>"; };
 		BB6FB5D926F8A47800E0E4AF /* GastronomyDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GastronomyDetailView.storyboard; sourceTree = "<group>"; };
 		BB6FB5DB26F8A49500E0E4AF /* TransportDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransportDetailView.storyboard; sourceTree = "<group>"; };
 		BB6FB5DD26F8A4A700E0E4AF /* HotelsDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HotelsDetailView.storyboard; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				BB6FB5DD26F8A4A700E0E4AF /* HotelsDetailView.storyboard */,
 				BB6FB5E526F8B36000E0E4AF /* HotelsViewController.swift */,
 				BB62CC2B26FA26D90002706F /* Hotel.swift */,
+				BB62CC2D26FA35990002706F /* HotelsTableViewCell.swift */,
 			);
 			path = HotelsDetailView;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				BB6FB5E626F8B36000E0E4AF /* HotelsViewController.swift in Sources */,
 				BB93055826F3280700B7674D /* MainCoordinator.swift in Sources */,
 				BB4FF7F526F9F0A2006D2229 /* Transport.swift in Sources */,
+				BB62CC2E26FA35990002706F /* HotelsTableViewCell.swift in Sources */,
 				D8677E1E26F4933E00F65A1A /* DetailCoordinator.swift in Sources */,
 				BB93056626F3AC5200B7674D /* DetailViewPresenter.swift in Sources */,
 				BB62CC2C26FA26D90002706F /* Hotel.swift in Sources */,
