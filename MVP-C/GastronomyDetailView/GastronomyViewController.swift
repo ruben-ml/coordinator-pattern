@@ -17,30 +17,50 @@ public class GastronomyViewController: UIViewController, Storyboarded {
 
     private lazy var contentView: UIView = {
       let contentView = UIView()
+      contentView.backgroundColor = UIColor.red
       contentView.translatesAutoresizingMaskIntoConstraints = false
       return contentView
     }()
     
     
     private lazy var stack: UIView = {
-       let stackView = UIStackView(arrangedSubviews: [imageIcon, titleName, imageLogo, imageView, imageView1])
+       let stackView = UIStackView(arrangedSubviews: [titleName, imageMain, titleDrinks, imageDrink, titleDesserts, imageDessert])
         stackView.axis = .vertical
         stackView.spacing = 10
-        stackView.distribution = .equalSpacing
-        stackView.backgroundColor = .blue
+        stackView.distribution = .fillProportionally
+        stackView.backgroundColor = .white
         stackView.frame = view.bounds
+        stackView.translatesAutoresizingMaskIntoConstraints = false
        return stackView
     }()
     
     public lazy var titleName: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .systemPink
         label.textColor = .orange
-        label.text = "pepepepepe"
-        label.font = UIFont(name: "Helvetica-neue", size: 20)
+        label.font = UIFont(name: "Helvetica Neue Bold", size: 20)
         label.textAlignment = .center
         label.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        label.heightAnchor.constraint(equalToConstant: view.frame.size.height).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        return label
+    }()
+    
+    public lazy var titleDrinks: UILabel = {
+        let label = UILabel()
+        label.textColor = .orange
+        label.font = UIFont(name: "Helvetica Neue Bold", size: 20)
+        label.textAlignment = .center
+        label.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        return label
+    }()
+    
+    public lazy var titleDesserts: UILabel = {
+        let label = UILabel()
+        label.textColor = .orange
+        label.font = UIFont(name: "Helvetica Neue Bold", size: 20)
+        label.textAlignment = .center
+        label.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 30).isActive = true
         return label
     }()
     
@@ -49,34 +69,34 @@ public class GastronomyViewController: UIViewController, Storyboarded {
         icon.backgroundColor = UIColor.yellow
         icon.contentMode = .scaleAspectFit
         icon.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: view.frame.size.height).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 200).isActive = true
         return icon
     }()
     
-    lazy var imageLogo: UIImageView = {
-        let icon = UIImageView(image: UIImage(named: "background"))
+    lazy var imageMain: UIImageView = {
+        let icon = UIImageView(image: UIImage(named: "mainDishes"))
         icon.backgroundColor = UIColor.yellow
         icon.contentMode = .scaleToFill
         icon.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: view.frame.size.height).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 300).isActive = true
         return icon
     }()
     
-    lazy var imageView: UIImageView = {
-        let icon = UIImageView(image: UIImage(named: "hotel3"))
+    lazy var imageDessert: UIImageView = {
+        let icon = UIImageView(image: UIImage(named: "turkeyDessert"))
         icon.backgroundColor = UIColor.yellow
         icon.contentMode = .scaleToFill
         icon.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: view.frame.size.height).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 200).isActive = true
         return icon
     }()
     
-    lazy var imageView1: UIImageView = {
-        let icon = UIImageView(image: UIImage(named: "hotel2"))
+    lazy var imageDrink: UIImageView = {
+        let icon = UIImageView(image: UIImage(named: "turkeyDrink"))
         icon.backgroundColor = UIColor.yellow
         icon.contentMode = .scaleToFill
         icon.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: view.frame.size.height).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 200).isActive = true
         return icon
     }()
     
@@ -89,6 +109,9 @@ public class GastronomyViewController: UIViewController, Storyboarded {
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
         contentView.addSubview(stack)
+        titleName.text = "Platos típicos de estambul"
+        titleDrinks.text = "Bebidas turcas"
+        titleDesserts.text = "Postres de turquía"
     }
     
     private func setupConstraints() {
@@ -113,6 +136,10 @@ public class GastronomyViewController: UIViewController, Storyboarded {
         stack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
         stack.leftAnchor.constraint(equalTo: contentView.leftAnchor)
       ])
+//
+//      NSLayoutConstraint.activate([
+//        titleName.topAnchor.constraint(equalTo: stack.topAnchor, constant: 10)
+//      ])
     }
 }
 

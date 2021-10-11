@@ -203,7 +203,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 16 images.
+  /// This `R.image` struct is generated, and contains static references to 19 images.
   struct image {
     /// Image `background`.
     static let background = Rswift.ImageResource(bundle: R.hostingBundle, name: "background")
@@ -227,6 +227,8 @@ struct R: Rswift.Validatable {
     static let hotel3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "hotel3")
     /// Image `idiom`.
     static let idiom = Rswift.ImageResource(bundle: R.hostingBundle, name: "idiom")
+    /// Image `mainDishes`.
+    static let mainDishes = Rswift.ImageResource(bundle: R.hostingBundle, name: "mainDishes")
     /// Image `price`.
     static let price = Rswift.ImageResource(bundle: R.hostingBundle, name: "price")
     /// Image `taxi`.
@@ -235,6 +237,10 @@ struct R: Rswift.Validatable {
     static let toursEspecias = Rswift.ImageResource(bundle: R.hostingBundle, name: "toursEspecias")
     /// Image `trolleyCar`.
     static let trolleyCar = Rswift.ImageResource(bundle: R.hostingBundle, name: "trolleyCar")
+    /// Image `turkeyDessert`.
+    static let turkeyDessert = Rswift.ImageResource(bundle: R.hostingBundle, name: "turkeyDessert")
+    /// Image `turkeyDrink`.
+    static let turkeyDrink = Rswift.ImageResource(bundle: R.hostingBundle, name: "turkeyDrink")
     /// Image `weather`.
     static let weather = Rswift.ImageResource(bundle: R.hostingBundle, name: "weather")
 
@@ -316,6 +322,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "mainDishes", bundle: ..., traitCollection: ...)`
+    static func mainDishes(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.mainDishes, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "price", bundle: ..., traitCollection: ...)`
     static func price(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.price, compatibleWith: traitCollection)
@@ -340,6 +353,20 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "trolleyCar", bundle: ..., traitCollection: ...)`
     static func trolleyCar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.trolleyCar, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "turkeyDessert", bundle: ..., traitCollection: ...)`
+    static func turkeyDessert(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.turkeyDessert, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "turkeyDrink", bundle: ..., traitCollection: ...)`
+    static func turkeyDrink(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.turkeyDrink, compatibleWith: traitCollection)
     }
     #endif
 
