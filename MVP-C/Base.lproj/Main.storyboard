@@ -271,14 +271,6 @@
             </objects>
             <point key="canvasLocation" x="1388" y="163"/>
         </scene>
-        <!--GastronomyViewController-->
-        <scene sceneID="dT8-i8-ZJI">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GastronomyViewController" storyboardName="GastronomyDetailView" referencedIdentifier="GastronomyViewController" id="8ZW-UG-kz3" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XYS-uq-jcE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1420" y="196"/>
-        </scene>
         <!--TransportViewController-->
         <scene sceneID="vgq-SS-Q87">
             <objects>

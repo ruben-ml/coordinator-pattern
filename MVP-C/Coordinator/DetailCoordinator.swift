@@ -64,7 +64,7 @@ extension DetailCoordinator {
     }
     
     func navigateToDetailGastronomy() {
-        let vc = GastronomyViewController.instantiate()
+        let vc = GastronomyViewController()
         navigationController.pushViewController(vc, animated: true)
     }
     

@@ -89,10 +89,8 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 8 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
   struct storyboard {
-    /// Storyboard `GastronomyDetailView`.
-    static let gastronomyDetailView = _R.storyboard.gastronomyDetailView()
     /// Storyboard `HotelsDetailView`.
     static let hotelsDetailView = _R.storyboard.hotelsDetailView()
     /// Storyboard `InformationDetailView`.
@@ -107,13 +105,6 @@ struct R: Rswift.Validatable {
     static let toursDetailView = _R.storyboard.toursDetailView()
     /// Storyboard `TransportDetailView`.
     static let transportDetailView = _R.storyboard.transportDetailView()
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "GastronomyDetailView", bundle: ...)`
-    static func gastronomyDetailView(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.gastronomyDetailView)
-    }
-    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "HotelsDetailView", bundle: ...)`
@@ -428,9 +419,6 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
-      try gastronomyDetailView.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
       try hotelsDetailView.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -452,26 +440,6 @@ struct _R: Rswift.Validatable {
       try transportDetailView.validate()
       #endif
     }
-
-    #if os(iOS) || os(tvOS)
-    struct gastronomyDetailView: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let gastronomyViewController = StoryboardViewControllerResource<GastronomyViewController>(identifier: "GastronomyViewController")
-      let name = "GastronomyDetailView"
-
-      func gastronomyViewController(_: Void = ()) -> GastronomyViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: gastronomyViewController)
-      }
-
-      static func validate() throws {
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-        if _R.storyboard.gastronomyDetailView().gastronomyViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'gastronomyViewController' could not be loaded from storyboard 'GastronomyDetailView' as 'GastronomyViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
 
     #if os(iOS) || os(tvOS)
     struct hotelsDetailView: Rswift.StoryboardResourceType, Rswift.Validatable {
