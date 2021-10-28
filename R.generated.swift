@@ -424,10 +424,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
   struct nib {
     /// Nib `ShopsViewController`.
     static let shopsViewController = _R.nib._ShopsViewController()
+    /// Nib `shopsTableViewCell`.
+    static let shopsTableViewCell = _R.nib._shopsTableViewCell()
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "ShopsViewController", in: bundle)`
@@ -437,6 +439,18 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "shopsTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.shopsTableViewCell) instead")
+    static func shopsTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.shopsTableViewCell)
+    }
+    #endif
+
+    static func shopsTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> shopsTableViewCell? {
+      return R.nib.shopsTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? shopsTableViewCell
+    }
+
     static func shopsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.shopsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -444,12 +458,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `cellHotel`.
     static let cellHotel: Rswift.ReuseIdentifier<HotelsTableViewCell> = Rswift.ReuseIdentifier(identifier: "cellHotel")
-    /// Reuse identifier `cell`.
-    static let cell: Rswift.ReuseIdentifier<CollectionViewCell> = Rswift.ReuseIdentifier(identifier: "cell")
     /// Reuse identifier `transportCell`.
     static let transportCell: Rswift.ReuseIdentifier<TransportCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "transportCell")
 
@@ -484,6 +496,20 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _shopsTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = shopsTableViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "cell"
+      let name = "shopsTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> shopsTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? shopsTableViewCell
       }
 
       fileprivate init() {}

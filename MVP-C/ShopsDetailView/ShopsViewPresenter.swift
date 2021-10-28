@@ -1,5 +1,5 @@
 //
-//  ListShops.swift
+//  ShopsViewPresenter.swift
 //  MVP-C
 //
 //  Created by Rubén Muñoz López on 28/10/21.
@@ -7,7 +7,8 @@
 
 import Foundation
 
-public class ListShops {
+public class ShopsViewPresenter {
+     
     var listShops = [shopsDTO]()
     
     init() {
