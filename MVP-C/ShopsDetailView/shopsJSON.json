@@ -1,0 +1,18 @@
+[
+    {
+       "name": "Gran bazar",
+       "description": "Uno de los mercados comerciales más grandes y antiguos del mundo, el Gran Bazar se remonta al siglo XV. A solo 10 minutos a pie de la emblemática Mezquita de Sultanahmet (Mezquita Azul), el bullicioso Bazar tiene más de 4.000 tiendas repletas de todo tipo de objetos, desde alfombras tradicionales turcas, antigüedades, textiles, joyas y cerámicas, hasta bolsos de diseñadores falsos."
+    },
+    {
+       "name": "Bazar de las especias",
+       "description": "El bazar de las especias es un bazar cubierto igualmente histórico y popular, que ofrece una espléndida selección de delicias turcas, que incluyen lokum (delicia turca), especias, frutos secos y té."
+    },
+    {
+       "name": "Feriköy Antique Market",
+       "description": "Funciona todos los domingos en el distrito de Feriköy, el vibrante mercadillo de Bomonti tiene alrededor de 200 puestos cargados de parafernalia como discos antiguos, juegos de porcelana, cámaras analógicas, máquinas de escribir, ropa y libros. Abierto desde primera hora de la mañana hasta última hora de la tarde, este excéntrico mercado entretiene a los amantes de la vendimia de todas las edades."
+    },
+    {
+       "name": "Kadıköy Salı Pazarı",
+       "description": "Para aquellos que deseen explorar las tiendas de la parte asiática de Estambul, Salı Pazarı de Kadıköy está repleto de frutas jugosas, ropa asequible, textiles y electrodomésticos de cocina. "
+    }
+]
