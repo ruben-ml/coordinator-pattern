@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import UIKit
 
-struct shopsDTO: Decodable {
-    let name: String?
-    let description: String?
+struct shopsDTO: Codable {
+    var name: String
+    var description: String
 }

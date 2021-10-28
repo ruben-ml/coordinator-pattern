@@ -15,7 +15,8 @@
 		BB2CE634272AAC28000DE37C /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2CE632272AAC28000DE37C /* ShopsViewController.swift */; };
 		BB2CE635272AAC28000DE37C /* ShopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2CE633272AAC28000DE37C /* ShopsViewController.xib */; };
 		BB2CE637272AAE73000DE37C /* shopsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = BB2CE636272AAE73000DE37C /* shopsJSON.json */; };
-		BB2CE639272AB9B4000DE37C /* shopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2CE638272AB9B4000DE37C /* shopsModel.swift */; };
+		BB2CE639272AB9B4000DE37C /* shopDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2CE638272AB9B4000DE37C /* shopDTO.swift */; };
+		BB2CE63B272AD388000DE37C /* ListShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2CE63A272AD388000DE37C /* ListShops.swift */; };
 		BB4FF7F526F9F0A2006D2229 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FF7F426F9F0A2006D2229 /* Transport.swift */; };
 		BB62CC2826FA19450002706F /* TransportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CC2726FA19450002706F /* TransportCollectionViewCell.swift */; };
 		BB62CC2C26FA26D90002706F /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CC2B26FA26D90002706F /* Hotel.swift */; };
@@ -76,7 +77,8 @@
 		BB2CE632272AAC28000DE37C /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
 		BB2CE633272AAC28000DE37C /* ShopsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopsViewController.xib; sourceTree = "<group>"; };
 		BB2CE636272AAE73000DE37C /* shopsJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shopsJSON.json; sourceTree = "<group>"; };
-		BB2CE638272AB9B4000DE37C /* shopsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopsModel.swift; sourceTree = "<group>"; };
+		BB2CE638272AB9B4000DE37C /* shopDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopDTO.swift; sourceTree = "<group>"; };
+		BB2CE63A272AD388000DE37C /* ListShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListShops.swift; sourceTree = "<group>"; };
 		BB4FF7F426F9F0A2006D2229 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		BB62CC2726FA19450002706F /* TransportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB62CC2B26FA26D90002706F /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
@@ -211,7 +213,8 @@
 				BB2CE632272AAC28000DE37C /* ShopsViewController.swift */,
 				BB2CE633272AAC28000DE37C /* ShopsViewController.xib */,
 				BB2CE636272AAE73000DE37C /* shopsJSON.json */,
-				BB2CE638272AB9B4000DE37C /* shopsModel.swift */,
+				BB2CE638272AB9B4000DE37C /* shopDTO.swift */,
+				BB2CE63A272AD388000DE37C /* ListShops.swift */,
 			);
 			path = ShopsDetailView;
 			sourceTree = "<group>";
@@ -598,7 +601,7 @@
 				BB6FB5F626F8EDE900E0E4AF /* CollectionViewCell.swift in Sources */,
 				BB29D78426F794C900FE4210 /* ToursViewController.swift in Sources */,
 				BB6FB5E626F8B36000E0E4AF /* HotelsViewController.swift in Sources */,
-				BB2CE639272AB9B4000DE37C /* shopsModel.swift in Sources */,
+				BB2CE639272AB9B4000DE37C /* shopDTO.swift in Sources */,
 				BB93055826F3280700B7674D /* MainCoordinator.swift in Sources */,
 				BB4FF7F526F9F0A2006D2229 /* Transport.swift in Sources */,
 				BB62CC2E26FA35990002706F /* HotelsTableViewCell.swift in Sources */,
@@ -608,6 +611,7 @@
 				BB6FB5F426F8DE1700E0E4AF /* R.generated.swift in Sources */,
 				BB6FB5E226F8B34200E0E4AF /* GastronomyViewController.swift in Sources */,
 				BB93055A26F328DB00B7674D /* Storyboarded.swift in Sources */,
+				BB2CE63B272AD388000DE37C /* ListShops.swift in Sources */,
 				BB6FB5E426F8B35500E0E4AF /* TransportViewController.swift in Sources */,
 				BB93052526F327AA00B7674D /* AppDelegate.swift in Sources */,
 				BB93052726F327AA00B7674D /* SceneDelegate.swift in Sources */,
