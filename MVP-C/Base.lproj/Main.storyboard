@@ -287,14 +287,6 @@
             </objects>
             <point key="canvasLocation" x="1392" y="265"/>
         </scene>
-        <!--ShopsViewController-->
-        <scene sceneID="lUW-c3-JGf">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ShopsViewController" storyboardName="ShopsDetailView" referencedIdentifier="ShopsViewController" id="CbC-pN-Ksk" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kU1-40-Y5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1391" y="303"/>
-        </scene>
     </scenes>
     <resources>
         <image name="background" width="612" height="404"/>

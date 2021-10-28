@@ -89,7 +89,7 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 6 storyboards.
   struct storyboard {
     /// Storyboard `HotelsDetailView`.
     static let hotelsDetailView = _R.storyboard.hotelsDetailView()
@@ -99,8 +99,6 @@ struct R: Rswift.Validatable {
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
-    /// Storyboard `ShopsDetailView`.
-    static let shopsDetailView = _R.storyboard.shopsDetailView()
     /// Storyboard `ToursDetailView`.
     static let toursDetailView = _R.storyboard.toursDetailView()
     /// Storyboard `TransportDetailView`.
@@ -131,13 +129,6 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "ShopsDetailView", bundle: ...)`
-    static func shopsDetailView(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.shopsDetailView)
     }
     #endif
 
@@ -419,6 +410,26 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `ShopsViewController`.
+    static let shopsViewController = _R.nib._ShopsViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ShopsViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.shopsViewController) instead")
+    static func shopsViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.shopsViewController)
+    }
+    #endif
+
+    static func shopsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.shopsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `cellHotel`.
@@ -452,6 +463,23 @@ struct _R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
+  struct nib {
+    struct _ShopsViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "ShopsViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
+
+  #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
@@ -465,9 +493,6 @@ struct _R: Rswift.Validatable {
       #endif
       #if os(iOS) || os(tvOS)
       try main.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try shopsDetailView.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try toursDetailView.validate()
@@ -554,26 +579,6 @@ struct _R: Rswift.Validatable {
         }
         if _R.storyboard.main().detailViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'detailViewController' could not be loaded from storyboard 'Main' as 'DetailViewController'.") }
         if _R.storyboard.main().viewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'viewController' could not be loaded from storyboard 'Main' as 'ViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct shopsDetailView: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "ShopsDetailView"
-      let shopsViewController = StoryboardViewControllerResource<ShopsViewController>(identifier: "ShopsViewController")
-
-      func shopsViewController(_: Void = ()) -> ShopsViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: shopsViewController)
-      }
-
-      static func validate() throws {
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-        if _R.storyboard.shopsDetailView().shopsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'shopsViewController' could not be loaded from storyboard 'ShopsDetailView' as 'ShopsViewController'.") }
       }
 
       fileprivate init() {}

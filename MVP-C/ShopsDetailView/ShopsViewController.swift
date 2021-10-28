@@ -2,19 +2,19 @@
 //  ShopsViewController.swift
 //  MVP-C
 //
-//  Created by Rubén Muñoz López on 20/9/21.
+//  Created by Rubén Muñoz López on 28/10/21.
 //
 
 import UIKit
 
-class ShopsViewController: UIViewController, Storyboarded {
+class ShopsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation

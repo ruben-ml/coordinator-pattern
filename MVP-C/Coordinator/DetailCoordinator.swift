@@ -79,7 +79,7 @@ extension DetailCoordinator {
     }
     
     func navigateToDetailShops() {
-        let vc = ShopsViewController.instantiate()
+        let vc = ShopsViewController(nibName: "ShopsViewController", bundle: nil)
         navigationController.pushViewController(vc, animated: true)
     }
 }

@@ -12,17 +12,17 @@
 		8B70AD3F252E3AF24B758953 /* Pods_MVP_C_MVP_CUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B256E059E82F35B68DD15D0 /* Pods_MVP_C_MVP_CUITests.framework */; };
 		BB29D78426F794C900FE4210 /* ToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29D78326F794C900FE4210 /* ToursViewController.swift */; };
 		BB29D78626F7953E00FE4210 /* ToursDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB29D78526F7953E00FE4210 /* ToursDetailView.storyboard */; };
+		BB2CE634272AAC28000DE37C /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2CE632272AAC28000DE37C /* ShopsViewController.swift */; };
+		BB2CE635272AAC28000DE37C /* ShopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2CE633272AAC28000DE37C /* ShopsViewController.xib */; };
 		BB4FF7F526F9F0A2006D2229 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FF7F426F9F0A2006D2229 /* Transport.swift */; };
 		BB62CC2826FA19450002706F /* TransportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CC2726FA19450002706F /* TransportCollectionViewCell.swift */; };
 		BB62CC2C26FA26D90002706F /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CC2B26FA26D90002706F /* Hotel.swift */; };
 		BB62CC2E26FA35990002706F /* HotelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CC2D26FA35990002706F /* HotelsTableViewCell.swift */; };
 		BB6FB5DC26F8A49500E0E4AF /* TransportDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5DB26F8A49500E0E4AF /* TransportDetailView.storyboard */; };
 		BB6FB5DE26F8A4A700E0E4AF /* HotelsDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5DD26F8A4A700E0E4AF /* HotelsDetailView.storyboard */; };
-		BB6FB5E026F8A4B200E0E4AF /* ShopsDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5DF26F8A4B200E0E4AF /* ShopsDetailView.storyboard */; };
 		BB6FB5E226F8B34200E0E4AF /* GastronomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5E126F8B34200E0E4AF /* GastronomyViewController.swift */; };
 		BB6FB5E426F8B35500E0E4AF /* TransportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5E326F8B35500E0E4AF /* TransportViewController.swift */; };
 		BB6FB5E626F8B36000E0E4AF /* HotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5E526F8B36000E0E4AF /* HotelsViewController.swift */; };
-		BB6FB5E826F8B36B00E0E4AF /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5E726F8B36B00E0E4AF /* ShopsViewController.swift */; };
 		BB6FB5EA26F8B5D600E0E4AF /* InformationDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FB5E926F8B5D600E0E4AF /* InformationDetailView.storyboard */; };
 		BB6FB5EC26F8B77900E0E4AF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5EB26F8B77900E0E4AF /* InformationViewController.swift */; };
 		BB6FB5F426F8DE1700E0E4AF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5F326F8DE1700E0E4AF /* R.generated.swift */; };
@@ -71,17 +71,17 @@
 		AF9E4556D73A1F2099ABB440 /* Pods-MVP-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP-C.release.xcconfig"; path = "Target Support Files/Pods-MVP-C/Pods-MVP-C.release.xcconfig"; sourceTree = "<group>"; };
 		BB29D78326F794C900FE4210 /* ToursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursViewController.swift; sourceTree = "<group>"; };
 		BB29D78526F7953E00FE4210 /* ToursDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToursDetailView.storyboard; sourceTree = "<group>"; };
+		BB2CE632272AAC28000DE37C /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
+		BB2CE633272AAC28000DE37C /* ShopsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopsViewController.xib; sourceTree = "<group>"; };
 		BB4FF7F426F9F0A2006D2229 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		BB62CC2726FA19450002706F /* TransportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB62CC2B26FA26D90002706F /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		BB62CC2D26FA35990002706F /* HotelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsTableViewCell.swift; sourceTree = "<group>"; };
 		BB6FB5DB26F8A49500E0E4AF /* TransportDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransportDetailView.storyboard; sourceTree = "<group>"; };
 		BB6FB5DD26F8A4A700E0E4AF /* HotelsDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HotelsDetailView.storyboard; sourceTree = "<group>"; };
-		BB6FB5DF26F8A4B200E0E4AF /* ShopsDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopsDetailView.storyboard; sourceTree = "<group>"; };
 		BB6FB5E126F8B34200E0E4AF /* GastronomyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GastronomyViewController.swift; sourceTree = "<group>"; };
 		BB6FB5E326F8B35500E0E4AF /* TransportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportViewController.swift; sourceTree = "<group>"; };
 		BB6FB5E526F8B36000E0E4AF /* HotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsViewController.swift; sourceTree = "<group>"; };
-		BB6FB5E726F8B36B00E0E4AF /* ShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
 		BB6FB5E926F8B5D600E0E4AF /* InformationDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InformationDetailView.storyboard; sourceTree = "<group>"; };
 		BB6FB5EB26F8B77900E0E4AF /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		BB6FB5F326F8DE1700E0E4AF /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -204,8 +204,8 @@
 		BB6FB5D826F8A45100E0E4AF /* ShopsDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				BB6FB5DF26F8A4B200E0E4AF /* ShopsDetailView.storyboard */,
-				BB6FB5E726F8B36B00E0E4AF /* ShopsViewController.swift */,
+				BB2CE632272AAC28000DE37C /* ShopsViewController.swift */,
+				BB2CE633272AAC28000DE37C /* ShopsViewController.xib */,
 			);
 			path = ShopsDetailView;
 			sourceTree = "<group>";
@@ -432,8 +432,8 @@
 				BB29D78626F7953E00FE4210 /* ToursDetailView.storyboard in Resources */,
 				BB6FB5EA26F8B5D600E0E4AF /* InformationDetailView.storyboard in Resources */,
 				BB93053126F327AC00B7674D /* LaunchScreen.storyboard in Resources */,
+				BB2CE635272AAC28000DE37C /* ShopsViewController.xib in Resources */,
 				BB93052E26F327AC00B7674D /* Assets.xcassets in Resources */,
-				BB6FB5E026F8A4B200E0E4AF /* ShopsDetailView.storyboard in Resources */,
 				BB6FB5DC26F8A49500E0E4AF /* TransportDetailView.storyboard in Resources */,
 				BB93052C26F327AA00B7674D /* Main.storyboard in Resources */,
 				BB6FB5DE26F8A4A700E0E4AF /* HotelsDetailView.storyboard in Resources */,
@@ -584,6 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2CE634272AAC28000DE37C /* ShopsViewController.swift in Sources */,
 				BB6FB5F826F8EF5300E0E4AF /* Information.swift in Sources */,
 				BB93052926F327AA00B7674D /* ViewController.swift in Sources */,
 				BB93055C26F3325800B7674D /* PresenterHomeView.swift in Sources */,
@@ -603,7 +604,6 @@
 				BB93052526F327AA00B7674D /* AppDelegate.swift in Sources */,
 				BB93052726F327AA00B7674D /* SceneDelegate.swift in Sources */,
 				BB62CC2826FA19450002706F /* TransportCollectionViewCell.swift in Sources */,
-				BB6FB5E826F8B36B00E0E4AF /* ShopsViewController.swift in Sources */,
 				BB93055F26F336FA00B7674D /* DetailViewController.swift in Sources */,
 				BB6FB5EC26F8B77900E0E4AF /* InformationViewController.swift in Sources */,
 			);
