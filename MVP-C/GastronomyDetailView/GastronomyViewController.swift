@@ -89,16 +89,16 @@ public class GastronomyViewController: UIViewController, Storyboarded {
         icon.backgroundColor = UIColor.yellow
         icon.contentMode = .scaleToFill
         icon.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 250).isActive = true
         return icon
     }()
     
     lazy var imageMainDishes: UIImageView = {
-        let icon = UIImageView(image: UIImage(named: "mainDishes"))
+        let icon = UIImageView(image: UIImage(named: "teteria"))
         icon.backgroundColor = UIColor.yellow
         icon.contentMode = .scaleToFill
         icon.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 250).isActive = true
         return icon
     }()
     
@@ -107,7 +107,7 @@ public class GastronomyViewController: UIViewController, Storyboarded {
         icon.backgroundColor = UIColor.yellow
         icon.contentMode = .scaleToFill
         icon.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 250).isActive = true
         return icon
     }()
     
@@ -116,7 +116,7 @@ public class GastronomyViewController: UIViewController, Storyboarded {
         icon.backgroundColor = UIColor.yellow
         icon.contentMode = .scaleToFill
         icon.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 250).isActive = true
         return icon
     }()
     
@@ -140,7 +140,7 @@ public class GastronomyViewController: UIViewController, Storyboarded {
         titleName.text = "Platos típicos de estambul"
         titleDrinks.text = "Bebidas turcas"
         titleDesserts.text = "Postres de turquía"
-        titleStack.text = "title stack"
+        titleStack.text = "Teterías"
     }
     
     private func setupConstraints() {
