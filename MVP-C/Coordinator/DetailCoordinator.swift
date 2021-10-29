@@ -79,7 +79,12 @@ extension DetailCoordinator {
     }
     
     func navigateToDetailShops() {
-        let vc = ShopsViewController(nibName: "ShopsViewController", bundle: nil)
+//        let vc = ShopsViewController(nibName: "ShopsViewController", bundle: nil)
+//        let presenter = ShopsViewPresenter(view: vc)
+//        vc.presenter = presenter
+        let presenter = ShopsViewPresenter()
+        let vc = ShopsViewController(presenter: presenter)
+        presenter.vista = vc
         navigationController.pushViewController(vc, animated: true)
     }
 }
