@@ -16,6 +16,7 @@ class shopsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         descriptionLbl.numberOfLines = 0
+        titleLbl.font = UIFont(name: "MarkerFelt-Thin", size: 20)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

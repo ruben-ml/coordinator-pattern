@@ -15,9 +15,9 @@ class ShopsViewController: UIViewController{
 
     @IBOutlet weak var tableView: UITableView!
     var data = [shopsDTO]()
-    private let presenter: shopsPresenterProtocol
+    private let presenter: ShopsPresenterProtocol
     
-    init(presenter: shopsPresenterProtocol) {
+    init(presenter: ShopsPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: "ShopsViewController", bundle: nil)
     }

@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol shopsPresenterProtocol: AnyObject {
+protocol ShopsPresenterProtocol: AnyObject {
    func viewDidLoad()
 }
 
-public class ShopsViewPresenter: shopsPresenterProtocol {
+public class ShopsViewPresenter: ShopsPresenterProtocol {
   
     weak var vista: shopsViewProtocol?
     

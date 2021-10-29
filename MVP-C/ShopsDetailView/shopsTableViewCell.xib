@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kg-Bn-Hcu">
-                        <rect key="frame" x="31" y="21" width="418" height="21"/>
+                        <rect key="frame" x="31" y="21" width="41.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -30,7 +31,6 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="rml-nQ-BZU" firstAttribute="centerX" secondItem="6kg-Bn-Hcu" secondAttribute="centerX" id="5Up-FW-UPX"/>
                     <constraint firstItem="6kg-Bn-Hcu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="31" id="6Wb-29-0Ng"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6kg-Bn-Hcu" secondAttribute="trailing" constant="20" id="GZ2-lb-iEq"/>
                     <constraint firstItem="rml-nQ-BZU" firstAttribute="top" secondItem="6kg-Bn-Hcu" secondAttribute="bottom" constant="16" id="SoG-p8-c54"/>
