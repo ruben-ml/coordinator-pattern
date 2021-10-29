@@ -11,7 +11,7 @@ protocol shopsViewProtocol: AnyObject {
     func load()
 }
 
-class ShopsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ShopsViewController: UIViewController{
 
     @IBOutlet weak var tableView: UITableView!
     var data = [shopsDTO]()
@@ -31,12 +31,15 @@ class ShopsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let nib = UINib(nibName: "shopsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
-        tableView.delegate =  self
         tableView.estimatedRowHeight = 135
         tableView.rowHeight = UITableView.automaticDimension
         tableView.reloadData()
         presenter.viewDidLoad()
     }
+    
+}
+// MARK: - UITableDataSource
+extension ShopsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
@@ -50,7 +53,6 @@ class ShopsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         return UITableViewCell()
     }
-    
 }
 
 // MARK: - shopsViewProtocol
