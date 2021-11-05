@@ -59,7 +59,7 @@ extension DetailCoordinator {
     }
     
     func navigateToDetailTours() {
-        let vc = ToursViewController.instantiate()
+        let vc = ToursViewController()
         navigationController.pushViewController(vc, animated: true)
     }
     

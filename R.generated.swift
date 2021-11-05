@@ -89,7 +89,7 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 6 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
   struct storyboard {
     /// Storyboard `HotelsDetailView`.
     static let hotelsDetailView = _R.storyboard.hotelsDetailView()
@@ -99,8 +99,6 @@ struct R: Rswift.Validatable {
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
-    /// Storyboard `ToursDetailView`.
-    static let toursDetailView = _R.storyboard.toursDetailView()
     /// Storyboard `TransportDetailView`.
     static let transportDetailView = _R.storyboard.transportDetailView()
 
@@ -129,13 +127,6 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "ToursDetailView", bundle: ...)`
-    static func toursDetailView(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.toursDetailView)
     }
     #endif
 
@@ -424,10 +415,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
     /// Nib `ShopsViewController`.
     static let shopsViewController = _R.nib._ShopsViewController()
+    /// Nib `ToursDetailTableViewCell`.
+    static let toursDetailTableViewCell = _R.nib._ToursDetailTableViewCell()
     /// Nib `shopsTableViewCell`.
     static let shopsTableViewCell = _R.nib._shopsTableViewCell()
 
@@ -436,6 +429,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.shopsViewController) instead")
     static func shopsViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.shopsViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ToursDetailTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.toursDetailTableViewCell) instead")
+    static func toursDetailTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.toursDetailTableViewCell)
     }
     #endif
 
@@ -455,11 +456,17 @@ struct R: Rswift.Validatable {
       return R.nib.shopsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
+    static func toursDetailTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ToursDetailTableViewCell? {
+      return R.nib.toursDetailTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ToursDetailTableViewCell
+    }
+
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `ToursDetailTableViewCell`.
+    static let toursDetailTableViewCell: Rswift.ReuseIdentifier<ToursDetailTableViewCell> = Rswift.ReuseIdentifier(identifier: "ToursDetailTableViewCell")
     /// Reuse identifier `cellHotel`.
     static let cellHotel: Rswift.ReuseIdentifier<HotelsTableViewCell> = Rswift.ReuseIdentifier(identifier: "cellHotel")
     /// Reuse identifier `transportCell`.
@@ -484,18 +491,48 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     #if os(iOS) || os(tvOS)
+    try nib.validate()
+    #endif
+    #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
 
   #if os(iOS) || os(tvOS)
-  struct nib {
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _ToursDetailTableViewCell.validate()
+    }
+
     struct _ShopsViewController: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "ShopsViewController"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ToursDetailTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+      typealias ReusableType = ToursDetailTableViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "ToursDetailTableViewCell"
+      let name = "ToursDetailTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ToursDetailTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ToursDetailTableViewCell
+      }
+
+      static func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "arrow.up.circle") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'arrow.up.circle' is used in nib 'ToursDetailTableViewCell', but couldn't be loaded.") } }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "checkmark.circle") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'checkmark.circle' is used in nib 'ToursDetailTableViewCell', but couldn't be loaded.") } }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'star' is used in nib 'ToursDetailTableViewCell', but couldn't be loaded.") } }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "timer") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'timer' is used in nib 'ToursDetailTableViewCell', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
@@ -533,9 +570,6 @@ struct _R: Rswift.Validatable {
       #endif
       #if os(iOS) || os(tvOS)
       try main.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try toursDetailView.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try transportDetailView.validate()
@@ -619,27 +653,6 @@ struct _R: Rswift.Validatable {
         }
         if _R.storyboard.main().detailViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'detailViewController' could not be loaded from storyboard 'Main' as 'DetailViewController'.") }
         if _R.storyboard.main().viewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'viewController' could not be loaded from storyboard 'Main' as 'ViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct toursDetailView: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "ToursDetailView"
-      let toursViewController = StoryboardViewControllerResource<ToursViewController>(identifier: "ToursViewController")
-
-      func toursViewController(_: Void = ()) -> ToursViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: toursViewController)
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "toursEspecias", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'toursEspecias' is used in storyboard 'ToursDetailView', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-        if _R.storyboard.toursDetailView().toursViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'toursViewController' could not be loaded from storyboard 'ToursDetailView' as 'ToursViewController'.") }
       }
 
       fileprivate init() {}
