@@ -34,6 +34,8 @@
 		BB6FB5F826F8EF5300E0E4AF /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FB5F726F8EF5300E0E4AF /* Information.swift */; };
 		BB8EEA1E273548D5004DE042 /* ToursDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EEA1C273548D5004DE042 /* ToursDetailTableViewCell.swift */; };
 		BB8EEA1F273548D5004DE042 /* ToursDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8EEA1D273548D5004DE042 /* ToursDetailTableViewCell.xib */; };
+		BB8EEA25273557B8004DE042 /* Tours.json in Resources */ = {isa = PBXBuildFile; fileRef = BB8EEA24273557B8004DE042 /* Tours.json */; };
+		BB8EEA2727355996004DE042 /* ToursDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8EEA2627355996004DE042 /* ToursDTO.swift */; };
 		BB93052526F327AA00B7674D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052426F327AA00B7674D /* AppDelegate.swift */; };
 		BB93052726F327AA00B7674D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052626F327AA00B7674D /* SceneDelegate.swift */; };
 		BB93052926F327AA00B7674D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93052826F327AA00B7674D /* ViewController.swift */; };
@@ -99,6 +101,8 @@
 		BB6FB5F726F8EF5300E0E4AF /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		BB8EEA1C273548D5004DE042 /* ToursDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDetailTableViewCell.swift; sourceTree = "<group>"; };
 		BB8EEA1D273548D5004DE042 /* ToursDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToursDetailTableViewCell.xib; sourceTree = "<group>"; };
+		BB8EEA24273557B8004DE042 /* Tours.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tours.json; sourceTree = "<group>"; };
+		BB8EEA2627355996004DE042 /* ToursDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursDTO.swift; sourceTree = "<group>"; };
 		BB93052126F327AA00B7674D /* MVP-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB93052426F327AA00B7674D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB93052626F327AA00B7674D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 				BB29D78326F794C900FE4210 /* ToursViewController.swift */,
 				BB8EEA1C273548D5004DE042 /* ToursDetailTableViewCell.swift */,
 				BB8EEA1D273548D5004DE042 /* ToursDetailTableViewCell.xib */,
+				BB8EEA24273557B8004DE042 /* Tours.json */,
+				BB8EEA2627355996004DE042 /* ToursDTO.swift */,
 			);
 			path = ToursDetailView;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 			files = (
 				BB2CE637272AAE73000DE37C /* shopsJSON.json in Resources */,
 				BB6FB5EA26F8B5D600E0E4AF /* InformationDetailView.storyboard in Resources */,
+				BB8EEA25273557B8004DE042 /* Tours.json in Resources */,
 				BB93053126F327AC00B7674D /* LaunchScreen.storyboard in Resources */,
 				BB8EEA1F273548D5004DE042 /* ToursDetailTableViewCell.xib in Resources */,
 				BB2CE635272AAC28000DE37C /* ShopsViewController.xib in Resources */,
@@ -621,6 +628,7 @@
 				BB2CE63E272AEACC000DE37C /* shopsTableViewCell.swift in Sources */,
 				BB62CC2C26FA26D90002706F /* Hotel.swift in Sources */,
 				BB6FB5F426F8DE1700E0E4AF /* R.generated.swift in Sources */,
+				BB8EEA2727355996004DE042 /* ToursDTO.swift in Sources */,
 				BB6FB5E226F8B34200E0E4AF /* GastronomyViewController.swift in Sources */,
 				BB93055A26F328DB00B7674D /* Storyboarded.swift in Sources */,
 				BB2CE63B272AD388000DE37C /* ShopsViewPresenter.swift in Sources */,

@@ -1,0 +1,43 @@
+[
+    {
+        "titleName" : "Paquete Turquía Básico",
+        "nameTours" : "Estambul-Capadoccia",
+        "nameDate" : "7 días/ 6 noches",
+        "idiom" : "Inglés"
+    },
+    
+    {
+        "titleName" : "Paquete Turquía Completo",
+        "nameTours" : "Estambul-Pamukkale",
+        "nameDate" : "6 días/ 5 noches",
+        "idiom" : "Español"
+    },
+    
+    {
+        "titleName" : "Paquete Turquía Premium",
+        "nameTours" : "Efeso-Pamukkale",
+        "nameDate" : "5 días/ 4 noches",
+        "idiom" : "Inglés"
+    },
+    
+    {
+        "titleName" : "Paquete Turquía Básico",
+        "nameTours" : "Crucero Bósforo",
+        "nameDate" : "3 días/ 2 noches",
+        "idiom" : "Español"
+    },
+    
+    {
+        "titleName" : "Paquete Turquía Completo",
+        "nameTours" : "Triángulo de oro-Capadoccia",
+        "nameDate" : "5 días/ 4 noches",
+        "idiom" : "Inglés"
+    },
+    
+    {
+        "titleName" : "Paquete Turquía Premium",
+        "nameTours" : "Maravillas de Turquía",
+        "nameDate" : "8 días/ 7 noches",
+        "idiom" : "Español"
+    }
+]
