@@ -7,7 +7,7 @@
 
 import Foundation
  
-struct ToursDTO {
+struct ToursDTO: Codable {
     let titleName: String?
     let nameTours: String?
     let nameDate: String?
