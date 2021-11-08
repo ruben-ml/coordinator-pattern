@@ -28,9 +28,9 @@ extension UIColor {
         )
     }
     
-    static let cellColor1 = UIColor(red: 0.628, green: 0.906, blue: 0.996, alpha: 1)
-    static let cellColor2 = UIColor(red: 0.518, green: 1, blue: 0.942, alpha: 1)
-    static let cellColor3 = UIColor(red: 1, green: 0.952, blue: 0.518, alpha: 1)
-    static let cellColor4 = UIColor(red: 1, green: 0.72, blue: 0.518, alpha: 1)
+    static let cellColor1 = UIColor(red: 0, green: 0.42, blue: 0.58, alpha: 1)
+    static let cellColor2 = UIColor(red: 0.99, green: 0.41, blue: 0.03, alpha: 1)
+    static let cellColor3 = UIColor(red: 0.99, green: 0.57, blue: 0.03, alpha: 1)
+    static let cellColor4 = UIColor(red: 0.994, green: 0.23, blue: 0.03, alpha: 1)
     
 }

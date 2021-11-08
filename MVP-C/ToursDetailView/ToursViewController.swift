@@ -22,7 +22,7 @@ class ToursViewController: UIViewController {
         table.estimatedRowHeight = 44
         table.register(ToursDetailTableViewCell.nib(), forCellReuseIdentifier: ToursDetailTableViewCell.identifier)
         table.translatesAutoresizingMaskIntoConstraints = false
-        table.separatorColor = UIColor.lightGray
+        table.separatorStyle = .none
         return table
     }()
     

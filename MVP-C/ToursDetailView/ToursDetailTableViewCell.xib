@@ -19,13 +19,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdB-Yb-B2v">
-                        <rect key="frame" x="138" y="15" width="41.5" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="137" y="15" width="43.5" height="22"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFd-Tp-RKI">
-                        <rect key="frame" x="103.5" y="38" width="110" height="20"/>
+                        <rect key="frame" x="103.5" y="39.5" width="110" height="20"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I6Y-h6-Jfv">
                                 <rect key="frame" x="0.0" y="-0.5" width="22" height="20"/>
@@ -46,54 +46,55 @@
                         <color key="tintColor" systemColor="systemYellowColor"/>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZP-eL-GFQ">
-                        <rect key="frame" x="128" y="56" width="61.5" height="20.5"/>
+                        <rect key="frame" x="130" y="57.5" width="57" height="20"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aQn-nH-5DU">
-                                <rect key="frame" x="0.0" y="0.5" width="20" height="19.5"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRt-IL-aF7">
-                                <rect key="frame" x="20" y="0.0" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="0.0" width="37" height="20"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="tintColor" systemColor="systemYellowColor"/>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hF5-oI-lIo">
-                        <rect key="frame" x="128" y="78" width="61.5" height="20.5"/>
+                        <rect key="frame" x="130" y="79" width="57" height="20"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rNe-Me-Km8">
-                                <rect key="frame" x="0.0" y="0.5" width="20" height="19.5"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-f0-FeL">
-                                <rect key="frame" x="20" y="0.0" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="0.0" width="37" height="20"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="tintColor" systemColor="systemYellowColor"/>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSj-or-CU6">
-                        <rect key="frame" x="128" y="101" width="61.5" height="20.5"/>
+                        <rect key="frame" x="130" y="101.5" width="57" height="20"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cgB-g3-RYf">
-                                <rect key="frame" x="0.0" y="0.5" width="20" height="19.5"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvl-ik-8Js">
-                                <rect key="frame" x="20" y="0.0" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="0.0" width="37" height="20"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="tintColor" systemColor="systemYellowColor"/>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" systemColor="labelColor"/>
                 <constraints>
                     <constraint firstItem="cFd-Tp-RKI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="79R-h6-yFw"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vSj-or-CU6" secondAttribute="trailing" constant="10" id="7oi-aE-0tS"/>
@@ -102,7 +103,7 @@
                     <constraint firstItem="CZP-eL-GFQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="AIL-ju-mf9"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hF5-oI-lIo" secondAttribute="trailing" constant="10" id="Bg5-y1-Jj6"/>
                     <constraint firstItem="cFd-Tp-RKI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EC1-jR-2oM"/>
-                    <constraint firstItem="MdB-Yb-B2v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="FCa-0o-eh8"/>
+                    <constraint firstItem="MdB-Yb-B2v" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="FCa-0o-eh8"/>
                     <constraint firstItem="MdB-Yb-B2v" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Fy3-cc-fBH"/>
                     <constraint firstItem="CZP-eL-GFQ" firstAttribute="top" secondItem="cFd-Tp-RKI" secondAttribute="bottom" constant="-2" id="IEP-RI-6xm"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MdB-Yb-B2v" secondAttribute="trailing" constant="10" id="JpW-1b-Fhl"/>
@@ -141,6 +142,9 @@
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="timer" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

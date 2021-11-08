@@ -26,17 +26,33 @@ class ToursDetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        initView()
+        contentView.layer.cornerRadius = contentView.layer.frame.size.height / 4
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setGradients(view: contentView)
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 2, left: 15, bottom: 2, right: 15))
+    }
+    
     static func nib() -> UINib {
         return UINib(nibName: "ToursDetailTableViewCell", bundle: nil)
     }
-    func initView() {
-        separatorInset = UIEdgeInsets.zero
+
+    func setGradients(view: UIView) {
+        let gradientLayer = CAGradientLayer()
+        let frame = CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+        gradientLayer.frame = frame
+        gradientLayer.colors = [UIColor.cellColor1.cgColor, UIColor.cellColor2.cgColor, UIColor.cellColor3.cgColor, UIColor.cellColor4.cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        gradientLayer.zPosition = -1
+        gradientLayer.cornerRadius = view.frame.size.height / 6
+        gradientLayer.masksToBounds = true
+        view.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
