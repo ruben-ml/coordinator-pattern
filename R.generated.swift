@@ -423,12 +423,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
   struct nib {
     /// Nib `ShopsViewController`.
     static let shopsViewController = _R.nib._ShopsViewController()
     /// Nib `ToursDetailTableViewCell`.
     static let toursDetailTableViewCell = _R.nib._ToursDetailTableViewCell()
+    /// Nib `ToursViewController`.
+    static let toursViewController = _R.nib._ToursViewController()
     /// Nib `shopsTableViewCell`.
     static let shopsTableViewCell = _R.nib._shopsTableViewCell()
 
@@ -445,6 +447,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.toursDetailTableViewCell) instead")
     static func toursDetailTableViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.toursDetailTableViewCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "ToursViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.toursViewController) instead")
+    static func toursViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.toursViewController)
     }
     #endif
 
@@ -466,6 +476,10 @@ struct R: Rswift.Validatable {
 
     static func toursDetailTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ToursDetailTableViewCell? {
       return R.nib.toursDetailTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ToursDetailTableViewCell
+    }
+
+    static func toursViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.toursViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     fileprivate init() {}
@@ -541,6 +555,17 @@ struct _R: Rswift.Validatable {
         if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "timer") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'timer' is used in nib 'ToursDetailTableViewCell', but couldn't be loaded.") } }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _ToursViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "ToursViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
 
       fileprivate init() {}

@@ -7,8 +7,15 @@
 
 import UIKit
 
-class ToursViewController: UIViewController, Storyboarded {
+protocol ToursViewProtocol: AnyObject {
+    func set(_ tours: [ToursDTO])
+}
 
+class ToursViewController: UIViewController {
+
+    var tours = [ToursDTO]()
+    private let viewmodel: ToursViewModelProtocol
+    
     lazy var tableView: UITableView = {
         let table = UITableView()
         table.dataSource = self
@@ -19,10 +26,20 @@ class ToursViewController: UIViewController, Storyboarded {
         return table
     }()
     
+    init (viewmodel: ToursViewModelProtocol) {
+        self.viewmodel = viewmodel
+        super.init(nibName: ToursViewController.className, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
         setupConstraints()
+        viewmodel.getDataFromServiceClass()
     }
     
     func setUp() {
@@ -44,12 +61,25 @@ class ToursViewController: UIViewController, Storyboarded {
 extension ToursViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return tours.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "ToursDetailTableViewCell", for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: "ToursDetailTableViewCell", for: indexPath) as! ToursDetailTableViewCell
+        cell.lblName?.text = tours[indexPath.row].titleName
+        cell.lblTime?.text = tours[indexPath.row].nameDate
+        cell.lblTitle?.text = tours[indexPath.row].nameTours
+        cell.titleIdiom?.text = tours[indexPath.row].idiom
     return cell
     }
+    
+}
+
+extension ToursViewController: ToursViewProtocol {
+    func set(_ tours: [ToursDTO]) {
+        self.tours = tours
+        self.tableView.reloadData()
+    }
+    
     
 }

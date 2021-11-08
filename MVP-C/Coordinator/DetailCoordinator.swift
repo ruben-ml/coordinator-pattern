@@ -59,7 +59,11 @@ extension DetailCoordinator {
     }
     
     func navigateToDetailTours() {
-        let vc = ToursViewController()
+//        let vc = ToursViewController()
+//        navigationController.pushViewController(vc, animated: true)
+        let viewModel = ToursViewModel(service: ToursService())
+        let vc = ToursViewController(viewmodel: viewModel)
+        viewModel.view = vc
         navigationController.pushViewController(vc, animated: true)
     }
     
